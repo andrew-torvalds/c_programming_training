@@ -1,0 +1,200 @@
+<svg width="100%" viewBox="0 0 680 920" xmlns="http://www.w3.org/2000/svg" style="background:#fff;font-family:Arial,sans-serif">
+
+<!-- Title -->
+<text x="340" y="36" text-anchor="middle" font-size="16" font-weight="500" fill="#2C2C2A">Kiểu dữ liệu trong C — cấu trúc bit</text>
+
+<!-- ========== SECTION 1: unsigned 8-bit ========== -->
+<text x="40" y="80" font-size="14" font-weight="500" fill="#2C2C2A">unsigned (uint8_t) — 8 bit, range: 0 → 255</text>
+<text x="40" y="100" font-size="12" fill="#5F5E5A">Tất cả 8 bit đều chứa giá trị</text>
+
+<!-- Bit boxes for unsigned - value 200 = 11001000 -->
+<g transform="translate(40, 115)">
+<text x="0" y="-4" font-size="11" fill="#5F5E5A">bit 7</text>
+<text x="75" y="-4" font-size="11" fill="#5F5E5A">bit 6</text>
+<text x="150" y="-4" font-size="11" fill="#5F5E5A">bit 5</text>
+<text x="225" y="-4" font-size="11" fill="#5F5E5A">bit 4</text>
+<text x="300" y="-4" font-size="11" fill="#5F5E5A">bit 3</text>
+<text x="375" y="-4" font-size="11" fill="#5F5E5A">bit 2</text>
+<text x="450" y="-4" font-size="11" fill="#5F5E5A">bit 1</text>
+<text x="525" y="-4" font-size="11" fill="#5F5E5A">bit 0</text>
+
+<rect x="0" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="32" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="75" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="107" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="150" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="182" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="225" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="257" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="300" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="332" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="375" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="407" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="450" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="482" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="525" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="557" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+
+<!-- Weight labels -->
+<text x="32" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">128</text>
+<text x="107" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">64</text>
+<text x="182" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">32</text>
+<text x="257" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">16</text>
+<text x="332" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">8</text>
+<text x="407" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">4</text>
+<text x="482" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">2</text>
+<text x="557" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">1</text>
+</g>
+
+<!-- Calculation -->
+<text x="40" y="200" font-size="12" fill="#5F5E5A">= 128 + 64 + 8 = 200</text>
+<rect x="350" y="186" width="130" height="30" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="415" y="201" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Giá trị: 200</text>
+
+<!-- ========== SECTION 2: signed 8-bit (positive) ========== -->
+<text x="40" y="250" font-size="14" font-weight="500" fill="#2C2C2A">signed (int8_t) — 8 bit, range: -128 → 127</text>
+<text x="40" y="270" font-size="12" fill="#5F5E5A">Bit cao nhất (MSB) = sign bit: 0 = dương, 1 = âm</text>
+
+<!-- Bit boxes for signed positive - value 100 = 01100100 -->
+<g transform="translate(40, 285)">
+<text x="0" y="-4" font-size="11" fill="#5F5E5A">sign</text>
+<text x="75" y="-4" font-size="11" fill="#5F5E5A">bit 6</text>
+<text x="150" y="-4" font-size="11" fill="#5F5E5A">bit 5</text>
+<text x="225" y="-4" font-size="11" fill="#5F5E5A">bit 4</text>
+<text x="300" y="-4" font-size="11" fill="#5F5E5A">bit 3</text>
+<text x="375" y="-4" font-size="11" fill="#5F5E5A">bit 2</text>
+<text x="450" y="-4" font-size="11" fill="#5F5E5A">bit 1</text>
+<text x="525" y="-4" font-size="11" fill="#5F5E5A">bit 0</text>
+
+<rect x="0" y="6" width="65" height="40" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="32" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">0</text>
+<rect x="75" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="107" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="150" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="182" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="225" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="257" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="300" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="332" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="375" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="407" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="450" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="482" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="525" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="557" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+</g>
+
+<text x="40" y="370" font-size="12" fill="#5F5E5A">Sign = 0 → dương. Giá trị = 64 + 32 + 4 = +100</text>
+<rect x="350" y="356" width="140" height="30" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="420" y="371" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#085041">Giá trị: +100</text>
+
+<!-- ========== SECTION 3: signed 8-bit (negative) — Two's complement ========== -->
+<text x="40" y="416" font-size="14" font-weight="500" fill="#2C2C2A">signed (int8_t) — số âm dùng two's complement</text>
+<text x="40" y="436" font-size="12" fill="#5F5E5A">Cùng bit pattern 11001000, nhưng signed → giá trị khác</text>
+
+<!-- Bit boxes for signed negative - same bits as unsigned 200: 11001000 -->
+<g transform="translate(40, 451)">
+<text x="0" y="-4" font-size="11" fill="#5F5E5A">sign</text>
+<text x="75" y="-4" font-size="11" fill="#5F5E5A">bit 6</text>
+<text x="150" y="-4" font-size="11" fill="#5F5E5A">bit 5</text>
+<text x="225" y="-4" font-size="11" fill="#5F5E5A">bit 4</text>
+<text x="300" y="-4" font-size="11" fill="#5F5E5A">bit 3</text>
+<text x="375" y="-4" font-size="11" fill="#5F5E5A">bit 2</text>
+<text x="450" y="-4" font-size="11" fill="#5F5E5A">bit 1</text>
+<text x="525" y="-4" font-size="11" fill="#5F5E5A">bit 0</text>
+
+<rect x="0" y="6" width="65" height="40" rx="4" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="32" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#712B13">1</text>
+<rect x="75" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="107" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="150" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="182" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="225" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="257" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="300" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="332" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">1</text>
+<rect x="375" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="407" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="450" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="482" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+<rect x="525" y="6" width="65" height="40" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="557" y="26" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">0</text>
+
+<text x="32" y="64" text-anchor="middle" font-size="11" fill="#993C1D" font-weight="500">-128</text>
+<text x="107" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">64</text>
+<text x="182" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">32</text>
+<text x="257" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">16</text>
+<text x="332" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">8</text>
+<text x="407" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">4</text>
+<text x="482" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">2</text>
+<text x="557" y="64" text-anchor="middle" font-size="11" fill="#5F5E5A">1</text>
+</g>
+
+<text x="40" y="536" font-size="12" fill="#5F5E5A">Sign = 1 → âm. Giá trị = -128 + 64 + 8 = -56</text>
+<rect x="350" y="522" width="130" height="30" rx="4" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="415" y="537" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#712B13">Giá trị: -56</text>
+
+<!-- ========== SECTION 4: Key insight ========== -->
+<rect x="40" y="575" width="600" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="340" y="596" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#633806">Cùng bit pattern 11001000</text>
+<text x="340" y="616" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">unsigned → 200 | signed → -56 | Khác nhau ở cách đọc bit cao nhất</text>
+
+<!-- ========== SECTION 5: Size comparison table ========== -->
+<text x="40" y="670" font-size="14" font-weight="500" fill="#2C2C2A">Bảng kích thước các kiểu dữ liệu cơ bản</text>
+
+<!-- Table header -->
+<rect x="40" y="682" width="145" height="32" rx="0" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="112" y="698" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#444441">Kiểu</text>
+<rect x="185" y="682" width="80" height="32" rx="0" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="225" y="698" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#444441">Bits</text>
+<rect x="265" y="682" width="180" height="32" rx="0" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="355" y="698" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#444441">Unsigned range</text>
+<rect x="445" y="682" width="195" height="32" rx="0" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="542" y="698" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#444441">Signed range</text>
+
+<!-- Row 1: 8-bit -->
+<rect x="40" y="714" width="145" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="112" y="728" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">uint8_t / int8_t</text>
+<rect x="185" y="714" width="80" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="225" y="728" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">8</text>
+<rect x="265" y="714" width="180" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="355" y="728" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">0 → 255</text>
+<rect x="445" y="714" width="195" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="542" y="728" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">-128 → 127</text>
+
+<!-- Row 2: 16-bit -->
+<rect x="40" y="742" width="145" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="112" y="756" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">uint16_t / int16_t</text>
+<rect x="185" y="742" width="80" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="225" y="756" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">16</text>
+<rect x="265" y="742" width="180" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="355" y="756" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">0 → 65,535</text>
+<rect x="445" y="742" width="195" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="542" y="756" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">-32,768 → 32,767</text>
+
+<!-- Row 3: 32-bit -->
+<rect x="40" y="770" width="145" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="112" y="784" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">uint32_t / int32_t</text>
+<rect x="185" y="770" width="80" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="225" y="784" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">32</text>
+<rect x="265" y="770" width="180" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="355" y="784" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">0 → 4,294,967,295</text>
+<rect x="445" y="770" width="195" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="542" y="784" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">-2.1B → 2.1B</text>
+
+<!-- Row 4: 64-bit -->
+<rect x="40" y="798" width="145" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="112" y="812" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">uint64_t / int64_t</text>
+<rect x="185" y="798" width="80" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="225" y="812" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">64</text>
+<rect x="265" y="798" width="180" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="355" y="812" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">0 → 1.8 × 10¹⁹</text>
+<rect x="445" y="798" width="195" height="28" rx="0" fill="none" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="542" y="812" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#2C2C2A">-9.2 × 10¹⁸ → 9.2 × 10¹⁸</text>
+
+<!-- Footer note -->
+<text x="40" y="856" font-size="12" fill="#5F5E5A">Công thức: unsigned n bit → 0 đến 2ⁿ - 1</text>
+<text x="40" y="876" font-size="12" fill="#5F5E5A">Công thức: signed n bit → -2ⁿ⁻¹ đến 2ⁿ⁻¹ - 1</text>
+<text x="40" y="904" font-size="12" fill="#5F5E5A">Luôn dùng stdint.h (uint8_t, int32_t...) thay vì int, long — đảm bảo kích thước giống nhau trên mọi platform</text>
+
+</svg>
