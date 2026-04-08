@@ -1,1 +1,1 @@
-thu nghiem hoc lap trinh c su dung ai first
+Áp dụng AI để học ngôn ngữ lập trình C
